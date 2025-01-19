@@ -1,12 +1,8 @@
 pipeline {
     agent any
-	environment {
-    PIPENV_VENV_IN_PROJECT="true"
-		}
     stages {
         stage('Build') {
             steps {
-		   sh 'C:\Users\Asus\AppData\Local\Programs\Python\Python310\Scripts\pip.exe install -U pipenv'
                sh 'pipenv --python python3 sync'
             }
         }
