@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-		   sh 'pip install -U pipenv'
+		   sh 'C:\Users\Asus\AppData\Local\Programs\Python\Python310\Scripts\pip.exe install -U pipenv'
                sh 'pipenv --python python3 sync'
             }
         }
