@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-               sh 'pipenv --python python3 sync'
+                'pipenv --python python3 sync'
             }
         }
         stage('Test') {
