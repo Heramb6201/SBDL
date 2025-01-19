@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+		   sh 'pip install -U pipenv'
                sh 'pipenv --python python3 sync'
             }
         }
